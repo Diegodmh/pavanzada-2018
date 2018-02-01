@@ -6,13 +6,11 @@ int p[10];
 
 void kata1()
 {
-    int number;
     for (int i = 0; i < sizeof(a) / sizeof(a[0]); i++)
     {
-        number = a[i];
         for (int j = 0; j < sizeof(a) / sizeof(a[0]); j++)
         {
-            if (number == b[j])
+            if (a[i] == b[j])
             {
                 p[i] = j;
                 b[j] = -1;
