@@ -1,23 +1,19 @@
-typedef struct e 
-{
-    char *key;
-    int value;
-
+typedef struct e {
+char *key;
+int value;
 } Element;
 
-typedef struct d
-{
-    Element *elements;
-    int count;
-	int size;
+typedef struct d {
+Element *elements;
+unsigned count;
+unsigned length;
 } HashElement;
-
-typedef struct h 
-{
-    HashElement *data;
-    int size;
-
+typedef struct h {
+HashElement *data;
+unsigned size;
+///
 } HashInt;
 
-void hashInit(HashInt *,int);
-void hashInsert(HashInt *, char *, int);
+void hashInit(HashInt *,unsigned);
+void hashInsert(HashInt *,char *,int);
+int * hashGet(HashInt *, char *);
