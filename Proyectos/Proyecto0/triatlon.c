@@ -1,4 +1,7 @@
 #include <stdio.h>
+unsigned int s1 = 1;
+unsigned int s2 = 1;
+unsigned int s3 = 1;
 
 void triatlon( int x[], unsigned char N){
 
